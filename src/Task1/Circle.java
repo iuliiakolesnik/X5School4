@@ -6,7 +6,7 @@ public class Circle implements Shape {
 
     @Override
     public double square() {
-        return 2 * Math.PI * this.radius;
+        return Math.PI * Math.pow(this.radius, 2);
     }
 
     Circle(double radius) {
