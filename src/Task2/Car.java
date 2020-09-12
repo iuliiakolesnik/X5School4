@@ -2,10 +2,10 @@ package Task2;
 
 public abstract class Car {
 
-    String model;
-    String carClass;
-    double weight;
-    Engine engine;
+    private String model;
+    private String carClass;
+    private double weight;
+    private Engine engine;
 
     Car(String model, String carClass, double weight, Engine engine) {
         this.model = model;
@@ -14,17 +14,33 @@ public abstract class Car {
         this.engine = engine;
     }
 
-    abstract void start();
+    public String getModel() {
+        return this.model;
+    }
 
-    abstract void stop();
+    public double getWeight() {
+        return this.weight;
+    }
 
-    abstract void printInfo();
+    public String getCarClass() {
+        return this.carClass;
+    }
 
-    void turnRight() {
+    public Engine getEngine() {
+        return this.engine;
+    }
+
+    public abstract void start();
+
+    public abstract void stop();
+
+    public abstract void printInfo();
+
+    public void turnRight() {
         System.out.println("Поворот направо");
     }
 
-    void turnLeft() {
+    public void turnLeft() {
         System.out.println("Поворот налево");
     }
 

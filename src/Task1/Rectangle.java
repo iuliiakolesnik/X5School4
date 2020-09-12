@@ -2,8 +2,8 @@ package Task1;
 
 public class Rectangle implements Shape {
 
-    double length;
-    double height;
+    private double length;
+    private double height;
 
     Rectangle(double length, double height) {
         this.height = height;

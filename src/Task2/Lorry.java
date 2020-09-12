@@ -4,7 +4,7 @@ package Task2;
 // Метод start – выводит на экран «Грузовик поехал», метод stop -   «грузовик остановился».
 public class Lorry extends Car {
 
-    double liftingCapacity;
+    private double liftingCapacity;
 
     Lorry(String model, String carClass, double weight, Engine engine, double liftingCapacity) {
         super(model, carClass, weight, engine);
@@ -12,17 +12,17 @@ public class Lorry extends Car {
     }
 
     @Override
-    void start() {
+    public void start() {
         System.out.println("Грузовик поехал");
     }
 
     @Override
-    void stop() {
+    public void stop() {
         System.out.println("Грузовик остановился");
     }
 
     @Override
-    void printInfo() {
-        System.out.println("liftingCapacity: " + this.liftingCapacity + " model: " + this.model + " classCar: " + this.carClass + " weight: " + this.weight + " enginePower: " + this.engine.power + " engineManufacturer: " + this.engine.manufacturer);
+    public void printInfo() {
+        System.out.println("liftingCapacity: " + this.liftingCapacity + " model: " + this.getModel() + " classCar: " + this.getCarClass() + " weight: " + this.getWeight() + " enginePower: " + this.getEngine().getPower() + " engineManufacturer: " + this.getEngine().getManufacturer());
     }
 }

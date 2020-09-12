@@ -4,9 +4,9 @@ import java.time.Month;
 
 public class Triangle implements Shape {
 
-    double triangleSide1;
-    double triangleSide2;
-    double triangleSide3;
+    private double triangleSide1;
+    private double triangleSide2;
+    private double triangleSide3;
 
     Triangle(double triangleSide1, double triangleSide2, double triangleSide3) {
         this.triangleSide1 = triangleSide1;

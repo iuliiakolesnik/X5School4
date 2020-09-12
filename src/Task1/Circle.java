@@ -2,7 +2,7 @@ package Task1;
 
 public class Circle implements Shape {
 
-    double radius;
+    private double radius;
 
     @Override
     public double square() {
