@@ -1,6 +1,4 @@
-package Task1;
-
-import java.time.Month;
+package X5School4.Task1;
 
 public class Triangle implements Shape {
 

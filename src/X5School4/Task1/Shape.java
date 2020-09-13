@@ -1,4 +1,4 @@
-package Task1;
+package X5School4.Task1;
 
 interface Shape {
 

@@ -1,4 +1,4 @@
-package Task2;
+package X5School4.Task2;
 
 public class SportCar extends Car {
 
